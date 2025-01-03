@@ -47,3 +47,7 @@ def fetch_expense_summary(start_date, end_date, table_name="expenses"):
         )
         summary = cursor.fetchall()
         return summary
+
+
+# if __name__ == '__main__':
+#     print(fetch_expenses_for_date('2024-08-06'))
