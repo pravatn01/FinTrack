@@ -1,6 +1,0 @@
-2025-01-03 21:13:07,602 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
-2025-01-03 21:13:30,927 - db_setup - INFO - delete_expenses_for_date called with 2024-08-01
-2025-01-03 21:13:30,979 - db_setup - INFO - insert_expense called with date: 2024-08-01, amount: 1227.0, category: Rent, notes: Monthly rent payment
-2025-01-03 21:13:31,021 - db_setup - INFO - insert_expense called with date: 2024-08-01, amount: 300.0, category: Food, notes: Groceries for the week
-2025-01-03 21:13:31,060 - db_setup - INFO - insert_expense called with date: 2024-08-01, amount: 1200.0, category: Rent, notes: Monthly rent payment
-2025-01-03 21:13:31,097 - db_setup - INFO - insert_expense called with date: 2024-08-01, amount: 300.0, category: Food, notes: Groceries for the week

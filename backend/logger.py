@@ -1,7 +1,8 @@
 import logging
+import os
 
 def setup_logger(name):
-    log_file = 'server.log'
+    log_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'server.log')
     level = logging.DEBUG
 
     logger = logging.getLogger(name)

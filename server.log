@@ -1,0 +1,76 @@
+2025-01-03 21:18:02,858 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 11:30:26,417 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-31
+2025-01-04 11:30:35,057 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-12
+2025-01-04 11:30:38,502 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 11:30:47,955 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-22
+2025-01-04 11:30:55,794 - db_setup - INFO - fetch_expenses_for_date called with 2023-08-14
+2025-01-04 11:31:02,946 - db_setup - INFO - fetch_expenses_for_date called with 2023-08-17
+2025-01-04 11:31:05,092 - db_setup - INFO - fetch_expenses_for_date called with 2023-08-19
+2025-01-04 11:31:11,878 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 11:32:41,356 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 11:37:33,218 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 11:38:09,870 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 14:23:30,196 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 14:52:49,735 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 14:52:53,990 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 15:41:06,075 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:00:15,979 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:08:18,337 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:08:40,783 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:09:17,456 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:09:26,493 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:12:45,694 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-04
+2025-01-04 16:16:09,510 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:17:12,891 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:18:59,605 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:19:20,787 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:21:11,477 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:21:32,399 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:23:45,515 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:24:08,004 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:24:19,186 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:36:36,038 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:41:06,932 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:41:24,219 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:41:41,307 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:41:50,571 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:41:51,396 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:42:30,060 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:43:16,007 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:43:24,911 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:46:37,091 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:46:39,182 - db_setup - INFO - delete_expenses_for_date called with 2024-08-29
+2025-01-04 16:46:39,217 - db_setup - INFO - insert_expense called with date: 2024-08-29, amount: 50.0, category: Shopping, notes: Clothers
+2025-01-04 16:48:31,846 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-29
+2025-01-04 16:48:33,949 - db_setup - INFO - delete_expenses_for_date called with 2024-08-29
+2025-01-04 16:48:33,985 - db_setup - INFO - insert_expense called with date: 2024-08-29, amount: 50.0, category: Shopping, notes: Clothers
+2025-01-04 16:48:34,021 - db_setup - INFO - insert_expense called with date: 2024-08-29, amount: 50.0, category: Shopping, notes: Clothers
+2025-01-04 16:51:21,698 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-02
+2025-01-04 16:51:31,836 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-02
+2025-01-04 16:51:33,936 - db_setup - INFO - delete_expenses_for_date called with 2024-08-02
+2025-01-04 16:51:33,973 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 50.0, category: Entertainment, notes: Movie tickets
+2025-01-04 16:51:34,010 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 150.0, category: Shopping, notes: New shoes
+2025-01-04 16:51:34,045 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 400.0, category: Food, notes: Groceries for the week
+2025-01-04 16:51:34,081 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 80.0, category: Entertainment, notes: Concert tickets
+2025-01-04 16:51:34,116 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 100.0, category: Shopping, notes: Clothes
+2025-01-04 16:52:04,097 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-02
+2025-01-04 16:52:06,203 - db_setup - INFO - delete_expenses_for_date called with 2024-08-02
+2025-01-04 16:52:06,238 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 50.0, category: Entertainment, notes: Movie tickets
+2025-01-04 16:52:06,275 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 150.0, category: Shopping, notes: New shoes nike jordan
+2025-01-04 16:52:06,311 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 400.0, category: Food, notes: Groceries for the week
+2025-01-04 16:52:06,347 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 80.0, category: Entertainment, notes: Concert tickets
+2025-01-04 16:52:06,384 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 100.0, category: Shopping, notes: Clothes
+2025-01-04 16:53:32,114 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-02
+2025-01-04 16:53:43,231 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-02
+2025-01-04 16:53:45,301 - db_setup - INFO - delete_expenses_for_date called with 2024-08-02
+2025-01-04 16:53:45,338 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 50.0, category: Entertainment, notes: Movie tickets
+2025-01-04 16:53:45,375 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 150.0, category: Shopping, notes: New shoes nike jordan
+2025-01-04 16:53:45,410 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 400.0, category: Food, notes: Groceries for the week
+2025-01-04 16:53:45,446 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 80.0, category: Entertainment, notes: Concert tickets
+2025-01-04 16:53:45,481 - db_setup - INFO - insert_expense called with date: 2024-08-02, amount: 100.0, category: Entertainment, notes: Clothes
+2025-01-04 16:58:11,074 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-04 16:58:17,576 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-15
+2025-01-04 16:58:58,507 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-15
+2025-01-04 16:59:00,582 - db_setup - INFO - delete_expenses_for_date called with 2024-08-15
+2025-01-04 16:59:00,620 - db_setup - INFO - insert_expense called with date: 2024-08-15, amount: 10.0, category: Shopping, notes: Bought potatoes
+2025-01-04 16:59:00,656 - db_setup - INFO - insert_expense called with date: 2024-08-15, amount: 2.0, category: Rent, notes: 
