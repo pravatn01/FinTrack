@@ -33,7 +33,7 @@ def add_update_tab():
                 notes = existing_expenses[i]["notes"]
             else:
                 amount = 0.0
-                category = "Shopping"
+                category = "Other"
                 notes = ""
 
             col1, col2, col3 = st.columns(3)

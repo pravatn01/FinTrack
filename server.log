@@ -74,3 +74,7 @@
 2025-01-04 16:59:00,582 - db_setup - INFO - delete_expenses_for_date called with 2024-08-15
 2025-01-04 16:59:00,620 - db_setup - INFO - insert_expense called with date: 2024-08-15, amount: 10.0, category: Shopping, notes: Bought potatoes
 2025-01-04 16:59:00,656 - db_setup - INFO - insert_expense called with date: 2024-08-15, amount: 2.0, category: Rent, notes: 
+2025-01-05 11:26:49,299 - db_setup - INFO - fetch_expense_summary called with start: 2024-07-02 end: 2024-07-10
+2025-01-05 11:26:59,216 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-02 end: 2024-08-10
+2025-01-05 11:27:19,430 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-05 11:30:05,555 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
