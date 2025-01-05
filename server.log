@@ -78,3 +78,5 @@
 2025-01-05 11:26:59,216 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-02 end: 2024-08-10
 2025-01-05 11:27:19,430 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
 2025-01-05 11:30:05,555 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-05 11:38:36,882 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-05 11:39:15,768 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
