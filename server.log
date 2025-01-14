@@ -80,3 +80,101 @@
 2025-01-05 11:30:05,555 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
 2025-01-05 11:38:36,882 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
 2025-01-05 11:39:15,768 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-05 12:10:49,754 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-05 12:27:42,345 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-05 12:27:44,897 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 04:55:23,659 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 04:55:28,893 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-08
+2025-01-14 04:55:29,964 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-08
+2025-01-14 04:55:32,042 - db_setup - INFO - delete_expenses_for_date called with 2024-08-08
+2025-01-14 04:55:38,964 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-06
+2025-01-14 04:55:52,258 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-06
+2025-01-14 04:55:54,347 - db_setup - INFO - delete_expenses_for_date called with 2024-08-06
+2025-01-14 04:55:54,383 - db_setup - INFO - insert_expense called with date: 2024-08-06, amount: 30.0, category: Food, notes: Lunch
+2025-01-14 04:55:54,417 - db_setup - INFO - insert_expense called with date: 2024-08-06, amount: 100.0, category: Shopping, notes: Shoes
+2025-01-14 04:55:54,451 - db_setup - INFO - insert_expense called with date: 2024-08-06, amount: 80.0, category: Entertainment, notes: Movies
+2025-01-14 04:55:54,486 - db_setup - INFO - insert_expense called with date: 2024-08-06, amount: 15.0, category: Other, notes: Public transport
+2025-01-14 05:14:12,583 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-06
+2025-01-14 05:14:23,644 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-06
+2025-01-14 08:15:00,229 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:15:08,235 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:15:11,526 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:17:00,828 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:17:07,640 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:17:09,743 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:23:16,360 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:23:26,868 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:24:23,554 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:24:25,645 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:28:36,099 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:28:38,173 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:29:30,136 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:29:33,307 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:29:35,386 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:29:47,242 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:29:51,909 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:29:52,674 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:29:54,766 - db_setup - INFO - fetch_expense_summary called with start: 2022-08-03 end: 2023-08-10
+2025-01-14 08:30:09,383 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:10,424 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:12,523 - db_setup - INFO - fetch_expense_summary called with start: 2022-08-03 end: 2021-08-10
+2025-01-14 08:30:17,494 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:18,507 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:20,604 - db_setup - INFO - fetch_expense_summary called with start: 2021-08-01 end: 2021-08-10
+2025-01-14 08:30:31,380 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:33,466 - db_setup - INFO - fetch_expense_summary called with start: 2021-08-01 end: 2021-08-10
+2025-01-14 08:30:39,186 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:48,745 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:30:50,846 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:31:53,218 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:31:57,984 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:32:00,077 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:35:14,230 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:35:23,677 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:35:25,780 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 08:42:27,815 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:42:29,930 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 08:43:17,406 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:43:19,506 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 08:43:20,096 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:43:20,857 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:43:21,342 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:43:22,902 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 08:43:24,978 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-02 end: 2024-08-06
+2025-01-14 08:43:27,062 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:16:06,011 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:16:06,043 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:16:06,043 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:16:06,198 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:16:08,187 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:16:08,220 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:16:08,220 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:16:08,297 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:16:11,271 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:16:13,356 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 15:16:15,422 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:17:21,199 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:17:23,314 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 15:17:26,550 - db_setup - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-01-14 15:17:28,650 - db_setup - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-01-14 15:17:30,729 - db_setup - INFO - fetch_expense_summary_by_months
+2025-01-14 16:03:28,057 - db_setup - INFO - insert_expense called with date: 2025-01-01, amount: 100.0, category: Food, notes: Lunch
+2025-01-14 16:03:28,093 - db_setup - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-01-14 16:03:28,173 - db_setup - INFO - insert_expense called with date: 2025-01-02, amount: 50.0, category: Transport, notes: Bus fare
+2025-01-14 16:03:28,209 - db_setup - INFO - fetch_expenses_for_date called with 2025-01-02
+2025-01-14 16:03:28,291 - db_setup - INFO - insert_expense called with date: 2025-01-03, amount: 75.0, category: Entertainment, notes: Movie night
+2025-01-14 16:03:28,327 - db_setup - INFO - delete_expenses_for_date called with 2025-01-03
+2025-01-14 16:03:28,365 - db_setup - INFO - fetch_expenses_for_date called with 2025-01-03
+2025-01-14 16:03:28,447 - db_setup - INFO - insert_expense called with date: 2025-01-04, amount: 40.0, category: Utilities, notes: Electricity bill
+2025-01-14 16:03:28,486 - db_setup - INFO - insert_expense called with date: 2025-01-05, amount: 60.0, category: Utilities, notes: Water bill
+2025-01-14 16:03:28,522 - db_setup - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-06
+2025-01-14 16:03:31,373 - db_setup - INFO - insert_expense called with date: 2025-01-01, amount: 100.0, category: Food, notes: Lunch
+2025-01-14 16:03:31,409 - db_setup - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-01-14 16:03:31,494 - db_setup - INFO - insert_expense called with date: 2025-01-02, amount: 50.0, category: Transport, notes: Bus fare
+2025-01-14 16:03:31,531 - db_setup - INFO - fetch_expenses_for_date called with 2025-01-02
+2025-01-14 16:03:31,617 - db_setup - INFO - insert_expense called with date: 2025-01-03, amount: 75.0, category: Entertainment, notes: Movie night
+2025-01-14 16:03:31,653 - db_setup - INFO - delete_expenses_for_date called with 2025-01-03
+2025-01-14 16:03:31,688 - db_setup - INFO - fetch_expenses_for_date called with 2025-01-03
+2025-01-14 16:03:31,773 - db_setup - INFO - insert_expense called with date: 2025-01-04, amount: 40.0, category: Utilities, notes: Electricity bill
+2025-01-14 16:03:31,808 - db_setup - INFO - insert_expense called with date: 2025-01-05, amount: 60.0, category: Utilities, notes: Water bill
+2025-01-14 16:03:31,846 - db_setup - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-06

@@ -1,6 +1,6 @@
 import mysql.connector
 from contextlib import contextmanager
-from logger import setup_logger
+from .logger import setup_logger #relative import for logger module for pytest
 
 logger = setup_logger('db_setup')
 
@@ -40,7 +40,11 @@ def delete_expenses_for_date(expense_date, table_name="expenses"):
     with get_db_cursor(commit=True) as cursor:
         cursor.execute(f'DELETE FROM {table_name} WHERE expense_date = %s', (expense_date,))
 
-def fetch_expense_summary(start_date, end_date, table_name="expenses"):
+ALLOWED_TABLES = {"expenses", "test_expenses"}
+
+def fetch_category_expense_summary(start_date, end_date, table_name="expenses"):
+    if table_name not in ALLOWED_TABLES:
+        raise ValueError(f"Invalid table name: {table_name}")
     logger.info(f"fetch_expense_summary called with start: {start_date} end: {end_date}")
     with get_db_cursor() as cursor:
         cursor.execute(
@@ -55,6 +59,15 @@ def fetch_expense_summary(start_date, end_date, table_name="expenses"):
         summary = cursor.fetchall()
         return summary
 
-
-# if __name__ == '__main__':
-#     print(fetch_expenses_for_date('2024-08-06'))
+def fetch_monthly_expense_summary():
+    logger.info(f"fetch_expense_summary_by_months")
+    with get_db_cursor() as cursor:
+        cursor.execute(
+            '''SELECT month(expense_date) as expense_month,
+               monthname(expense_date) as month_name,
+               sum(amount) as total FROM expenses
+               GROUP BY expense_month, month_name;
+            '''
+        )
+        data = cursor.fetchall()
+        return data

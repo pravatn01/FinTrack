@@ -32,9 +32,9 @@ def add_or_update_expense(expense_date: date, expenses:List[Expense]):
 
     return {"message": "Expenses updated successfully"}
 
-@app.post('/analytics/')
+@app.post('/category_summary/')
 def get_analytics(date_range: DateRange):
-    data = db_setup.fetch_expense_summary(date_range.start_date, date_range.end_date)
+    data = db_setup.fetch_category_expense_summary(date_range.start_date, date_range.end_date)
     if data is None:
         raise HTTPException(status_code=500, detail="Failed to retrieve expense summary from the database.")
 
@@ -48,3 +48,11 @@ def get_analytics(date_range: DateRange):
             'percentage': percentage
         }
     return breakdown
+
+@app.get("/monthly_summary/")
+def get_analytics():
+    monthly_summary = db_setup.fetch_monthly_expense_summary()
+    if monthly_summary is None:
+        raise HTTPException(status_code=500, detail="Failed to retrieve monthly expense summary from the database.")
+
+    return monthly_summary

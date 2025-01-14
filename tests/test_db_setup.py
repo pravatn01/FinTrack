@@ -1,13 +1,15 @@
 import pytest
+
 from backend.db_setup import (
     insert_expense,
     fetch_expenses_for_date,
     delete_expenses_for_date,
-    fetch_expense_summary,
+    fetch_category_expense_summary,
     get_db_cursor,
 )
 
-TABLE_NAME = "test_expenses"  
+
+TABLE_NAME = "test_expenses"
 
 @pytest.fixture(scope="module")
 def setup_test_db():
@@ -53,10 +55,10 @@ def test_delete_expenses_for_date(setup_test_db, reset_test_db):
     expenses = fetch_expenses_for_date("2025-01-03", table_name=TABLE_NAME)
     assert len(expenses) == 0
 
-def test_fetch_expense_summary(setup_test_db, reset_test_db):
+def test_fetch_category_expense_summary(setup_test_db, reset_test_db):
     insert_expense("2025-01-04", 40.00, "Utilities", "Electricity bill", table_name=TABLE_NAME)
     insert_expense("2025-01-05", 60.00, "Utilities", "Water bill", table_name=TABLE_NAME)
-    summary = fetch_expense_summary("2025-01-01", "2025-01-06", table_name=TABLE_NAME)
+    summary = fetch_category_expense_summary("2025-01-01", "2025-01-06", table_name=TABLE_NAME)
     assert len(summary) == 1
     assert summary[0]["category"] == "Utilities"
     assert summary[0]["total"] == 100.00
