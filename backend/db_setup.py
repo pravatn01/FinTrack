@@ -1,6 +1,6 @@
 import mysql.connector
 from contextlib import contextmanager
-from .logger import setup_logger #relative import for logger module for pytest
+from backend.logger import setup_logger #relative import for logger module for pytest
 
 logger = setup_logger('db_setup')
 
@@ -66,7 +66,8 @@ def fetch_monthly_expense_summary():
             '''SELECT month(expense_date) as expense_month,
                monthname(expense_date) as month_name,
                sum(amount) as total FROM expenses
-               GROUP BY expense_month, month_name;
+               GROUP BY expense_month, month_name
+               ORDER BY expense_month;
             '''
         )
         data = cursor.fetchall()
