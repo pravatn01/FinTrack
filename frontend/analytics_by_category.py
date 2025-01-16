@@ -7,9 +7,14 @@ import plotly.express as px
 API_URL = "http://localhost:8000"
 
 def analytics_category_tab():
-    start_date, end_date = st.columns(2)
-    start_date = start_date.date_input("Start Date", datetime(2024, 1, 1))
-    end_date = end_date.date_input("End Date", datetime(2024, 1, 31))
+    st.markdown("""
+        <h2 style='font-family: "Poppins", sans-serif; font-size: 32px; color: #ff4b4b;'>Category Analytics</h2>
+        <hr style='margin-top: 0; margin-bottom: 20px;'>
+    """, unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+    start_date = col1.date_input("Start Date", datetime(2024, 1, 1))
+    end_date = col2.date_input("End Date", datetime(2024, 1, 31))
 
     if st.button("Get Analytics"):
         response = requests.post(
@@ -21,22 +26,30 @@ def analytics_category_tab():
             [(cat, round(data["percentage"], 2), data["total"]) for cat, data in response.items()],
             columns=["Category", "Percentage", "Total Expense (₹)"]
         ).sort_values(by="Percentage", ascending=False)
+        df = df[["Category", "Total Expense (₹)", "Percentage"]]
 
-        st.title("Expense Breakdown By Category")
+        st.markdown("<h3 style='font-size: 24px;'>Expense Distribution By Category</h3>", unsafe_allow_html=True)
         fig = px.pie(
-            df, names="Category", values="Percentage", hole=0.35,
+            df,
+            names="Category",
+            values="Percentage",
+            hole=0.35,
             color_discrete_sequence=px.colors.sequential.Reds
         ).update_traces(
-            textinfo="percent+label", textfont_size=14,
+            textinfo="percent+label",
+            textfont_size=14,
             pull=[0.06] + [0] * (len(df) - 1),
             hovertemplate="%{label}<br>Percentage: %{value:.2f}%"
-        ).update_layout(showlegend=False, margin=dict(l=60, r=40, t=80, b=80), height=500, width=700)
-
+        ).update_layout(
+            showlegend=False,
+            margin=dict(l=60, r=40, t=80, b=80),
+            height=500,
+            width=700
+        )
         st.plotly_chart(fig, use_container_width=True)
 
-        st.table(df.assign(
-            **{
-                "Total Expense (₹)": df["Total Expense (₹)"].map("{:,.2f}".format),
-                "Percentage": df["Percentage"].map(lambda x: f"{x:.2f}%")
-            }
-        ))
+        st.markdown("<h3 style='font-size: 20px;'>Category Expense Summary</h3>", unsafe_allow_html=True)
+        st.table(df.style.format({
+            "Total Expense (₹)": "{:,.2f}",
+            "Percentage": "{:.2f}%"
+        }))

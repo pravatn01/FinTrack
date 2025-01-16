@@ -1,7 +1,6 @@
 # This is a script to insert some data onto the expenses table of database.
 # Either import the 'expense_db_backup.sql' onto MySQL database or run this script.
 
-
 import random
 import mysql.connector
 from datetime import datetime, timedelta
@@ -35,7 +34,7 @@ def generate_expense_data():
     end_date = datetime(2024, 12, 31)
     current_date = start_date
     while current_date <= end_date:
-        num_entries = random.randint(1, 10)
+        num_entries = random.randint(1, 5)  # Changed max entries to 5
         for _ in range(num_entries):
             category = random.choice(categories)
             note = random.choice(notes[category])
@@ -87,3 +86,4 @@ if __name__ == "__main__":
     expense_data = generate_expense_data()
     insert_expense_data(expense_data)
     print(f"Inserted {len(expense_data)} records into the database.")
+

@@ -1,5 +1,4 @@
 import pytest
-
 from backend.db_setup import (
     insert_expense,
     fetch_expenses_for_date,
@@ -7,7 +6,6 @@ from backend.db_setup import (
     fetch_category_expense_summary,
     get_db_cursor,
 )
-
 
 TABLE_NAME = "test_expenses"
 
@@ -24,7 +22,6 @@ def setup_test_db():
         )
         ''')
     yield
-
     with get_db_cursor(commit=True) as cursor:
         cursor.execute(f'DROP TABLE IF EXISTS {TABLE_NAME}')
 
