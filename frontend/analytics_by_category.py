@@ -3,8 +3,9 @@ from datetime import datetime
 import requests
 import pandas as pd
 import plotly.express as px
+import os
 
-API_URL = "http://localhost:8000"
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 def analytics_category_tab():
     st.markdown("""

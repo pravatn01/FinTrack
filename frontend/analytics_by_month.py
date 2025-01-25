@@ -2,8 +2,9 @@ import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
+import os
 
-API_URL = "http://localhost:8000"
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 def analytics_months_tab():
     response = requests.get(f"{API_URL}/monthly_summary/")

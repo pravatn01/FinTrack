@@ -1,8 +1,9 @@
 import streamlit as st
 from datetime import datetime
 import requests
+import os
 
-API_URL = "http://localhost:8000"
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 def add_update_tab():
     selected_date = st.date_input(
