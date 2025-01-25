@@ -2,18 +2,38 @@ import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
+import os
 
-# API_URL = "http://localhost:8000"
-API_URL = "https://fintrack-app.streamlit.app"
+if "localhost" in os.getenv("HOST", "localhost"):
+    API_URL = "http://localhost:8000"
+else:
+    API_URL = "https://fintrack-app.streamlit.app"
 
 def analytics_months_tab():
-    response = requests.get(f"{API_URL}/monthly_summary/")
-    monthly_data = response.json()
-    df = pd.DataFrame(monthly_data).rename(columns={
-        "expense_month": "Month Number",
-        "month_name": "Month",
-        "total": "Total Expense (₹)"
-    }).sort_values("Month Number").set_index("Month Number")
+    try:
+        response = requests.get(f"{API_URL}/monthly_summary/")
+        if response.status_code == 200:
+            try:
+                monthly_data = response.json()
+            except requests.exceptions.JSONDecodeError:
+                st.warning("The API returned an invalid JSON response.")
+                return
+        else:
+            st.warning(f"Failed to fetch data: {response.status_code} - {response.text}")
+            return
+    except requests.exceptions.RequestException as e:
+        st.error(f"Error connecting to the API: {e}")
+        return
+
+    try:
+        df = pd.DataFrame(monthly_data).rename(columns={
+            "expense_month": "Month Number",
+            "month_name": "Month",
+            "total": "Total Expense (₹)"
+        }).sort_values("Month Number").set_index("Month Number")
+    except (KeyError, TypeError, ValueError):
+        st.error("Unexpected data format in the API response.")
+        return
 
     st.markdown("""
         <h2 style='font-family: "Poppins", sans-serif; font-size: 32px; color: #ff4b4b;'>Monthly Analytics</h2>
@@ -43,5 +63,5 @@ def analytics_months_tab():
 
     st.markdown("<h3 style='font-size: 20px;'>Monthly Expense Summary</h3>", unsafe_allow_html=True)
     st.table(df.style.format({
-    "Total Expense (₹)": "{:,.2f}".format
+        "Total Expense (₹)": "{:,.2f}"
     }))

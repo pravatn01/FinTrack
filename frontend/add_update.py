@@ -3,8 +3,10 @@ from datetime import datetime
 import requests
 import os
 
-# API_URL = "http://localhost:8000"
-API_URL = "https://fintrack-app.streamlit.app"
+if "localhost" in os.getenv("HOST", "localhost"):
+    API_URL = "http://localhost:8000"
+else:
+    API_URL = "https://fintrack-app.streamlit.app"
 
 def add_update_tab():
     selected_date = st.date_input(
@@ -13,8 +15,20 @@ def add_update_tab():
         label_visibility="collapsed"
     )
 
-    response = requests.get(f"{API_URL}/expenses/{selected_date}")
-    existing_expenses = response.json() if response.status_code == 200 else []
+    try:
+        response = requests.get(f"{API_URL}/expenses/{selected_date}")
+        if response.status_code == 200:
+            try:
+                existing_expenses = response.json()
+            except requests.exceptions.JSONDecodeError:
+                st.warning("The response from the server is not in JSON format.")
+                existing_expenses = []
+        else:
+            st.warning(f"Failed to fetch data: {response.status_code} - {response.text}")
+            existing_expenses = []
+    except requests.exceptions.RequestException as e:
+        st.error(f"Error connecting to the API: {e}")
+        existing_expenses = []
 
     categories = ["Entertainment", "Food", "Rent", "Shopping", "Others"]
 
@@ -67,12 +81,14 @@ def add_update_tab():
         if submit_button:
             with st.spinner("Updating expenses..."):
                 filtered_expenses = [expense for expense in expenses if expense['amount'] > 0]
-                response = requests.post(
-                    f"{API_URL}/expenses/{selected_date}",
-                    json=filtered_expenses
-                )
-
-                if response.status_code == 200:
-                    st.success("Expenses updated successfully!")
-                else:
-                    st.error("Failed to update expenses.")
+                try:
+                    response = requests.post(
+                        f"{API_URL}/expenses/{selected_date}",
+                        json=filtered_expenses
+                    )
+                    if response.status_code == 200:
+                        st.success("Expenses updated successfully!")
+                    else:
+                        st.error(f"Failed to update expenses: {response.status_code} - {response.text}")
+                except requests.exceptions.RequestException as e:
+                    st.error(f"Error connecting to the API: {e}")
