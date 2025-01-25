@@ -4,7 +4,10 @@ import pandas as pd
 import plotly.express as px
 import os
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+if "localhost" in os.getenv("HOST", "localhost"):
+    API_URL = "http://localhost:8000"
+else:
+    API_URL = "https://fintrack-app.streamlit.app"
 
 def analytics_months_tab():
     response = requests.get(f"{API_URL}/monthly_summary/")

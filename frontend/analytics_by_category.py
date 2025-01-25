@@ -5,8 +5,11 @@ import pandas as pd
 import plotly.express as px
 import os
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
-
+if "localhost" in os.getenv("HOST", "localhost"):
+    API_URL = "http://localhost:8000"
+else:
+    API_URL = "https://fintrack-app.streamlit.app"
+    
 def analytics_category_tab():
     st.markdown("""
         <h2 style='font-family: "Poppins", sans-serif; font-size: 32px; color: #ff4b4b;'>Category Analytics</h2>

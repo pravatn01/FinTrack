@@ -3,8 +3,11 @@ from datetime import datetime
 import requests
 import os
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
-
+if "localhost" in os.getenv("HOST", "localhost"):
+    API_URL = "http://localhost:8000"
+else:
+    API_URL = "https://fintrack-app.streamlit.app"
+    
 def add_update_tab():
     selected_date = st.date_input(
         "Enter Date",
