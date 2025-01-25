@@ -3,12 +3,10 @@ from datetime import datetime
 import requests
 import pandas as pd
 import plotly.express as px
-import os
 
-if "localhost" in os.getenv("HOST", "localhost"):
-    API_URL = "http://localhost:8000"
-else:
-    API_URL = "https://fintrack-app.streamlit.app"
+#Use this API_URL instead and comment out other one while running the project locally
+# API_URL = "http://localhost:8000"
+API_URL = "https://fintrack-app.streamlit.app"
 
 def analytics_category_tab():
     st.markdown("""
