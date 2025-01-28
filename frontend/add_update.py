@@ -2,9 +2,7 @@ import streamlit as st
 from datetime import datetime
 import requests
 
-#Use this API_URL instead and comment out other one while running the project locally
-# API_URL = "http://localhost:8000"
-API_URL = "https://fintrack-app.streamlit.app"
+API_URL = "http://localhost:8000"
 
 def add_update_tab():
     selected_date = st.date_input(

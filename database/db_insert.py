@@ -34,7 +34,7 @@ def generate_expense_data():
     end_date = datetime(2024, 12, 31)
     current_date = start_date
     while current_date <= end_date:
-        num_entries = random.randint(1, 5)  # Changed max entries to 5
+        num_entries = random.randint(1, 5)  
         for _ in range(num_entries):
             category = random.choice(categories)
             note = random.choice(notes[category])

@@ -3,9 +3,7 @@ import requests
 import pandas as pd
 import plotly.express as px
 
-#Use this API_URL instead and comment out other one while running the project locally
-# API_URL = "http://localhost:8000"
-API_URL = "https://fintrack-app.streamlit.app"
+API_URL = "http://localhost:8000"
 
 def analytics_months_tab():
     try:
