@@ -22,20 +22,20 @@
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/fintrack.git
+git clone https://github.com/pravatn01/FinTrack.git
 cd fintrack
 ```
 
 ### 2. **[Optional] Create and Activate Virtual Environment**
 
 - **Windows**:
-  
+
   ```bash
   python -m venv venv
   venv\Scripts\activate
   ```
 - **Mac/Linux**:
-  
+
   ```bash
   python -m venv venv
   source venv/bin/activate
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ### 4. **Load the Database**
 
 - **Option 1**: Execute `db_insert.py` to create the necessary database and tables, and insert initial values:
-  
+
   ```bash
   python database/db_insert.py
   ```
