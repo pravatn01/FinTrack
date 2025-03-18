@@ -101,5 +101,9 @@ pytest tests/
 
 ---
 
-Feel free to contribute or suggest improvements! ✨
+## 🌐 Web App Preview
+  ![📅 Add/Update Expenses](images/fin1.png)
+  ![📊 Category Analytics](images/fin2.png)
+  ![📈 Monthly Analytics](images/fin3.png)
 
+---
